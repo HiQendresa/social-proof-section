@@ -40,6 +40,7 @@ body {
   height: 1530px;
   padding: 20px 0;
   position: relative;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   body {
@@ -58,6 +59,32 @@ img,
 picture {
   width: 100%;
   display: block;
+}
+
+.img-top {
+  position: absolute;
+}
+@media screen and (min-width: 1200px) {
+  .img-top {
+    width: 584px;
+    height: 362px;
+    top: -13%;
+  }
+}
+
+.img-bottom {
+  position: absolute;
+  z-index: -1;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .img-bottom {
+    display: block;
+    width: 1085px;
+    height: 673px;
+    bottom: 2%;
+    left: 25%;
+  }
 }
 
 header {

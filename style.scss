@@ -42,6 +42,7 @@ body {
     height: 1530px;
     padding: 20px 0;
     position: relative;
+    margin: 0 auto;
 
     @media screen and (min-width: 1200px) {
         width: 1440px;
@@ -60,6 +61,29 @@ picture {
   display: block;
 }
 
+.img-top {
+    position: absolute;
+    @media screen and (min-width: 1200px) {
+        width: 584px;
+        height: 362px;
+        top: -13%;
+    }
+}
+
+.img-bottom {
+    position: absolute;
+    z-index: -1;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+
+        display: block;
+        width: 1085px;
+        height: 673px;
+        bottom: 2%;
+        left: 25%;
+    }
+}
 header {
     display: flex;
     flex-direction: column;
